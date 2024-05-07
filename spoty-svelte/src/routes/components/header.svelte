@@ -1,11 +1,13 @@
 <nav class="header">
-    <a class="logo" href="/">S p o t y</a>
+    <img class="logo" src="src/lib/images/logo.svg" alt=""/>
+    <a class="name" href="/">Spoty</a>
+    <input class="search"/>
 </nav>
 
 <style>
 .header {
     width: 100%;
-    background: rgb(29, 29, 29);
+    background: rgb(16, 16, 16);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,18 +20,36 @@
 }
 
 .logo {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.search {
+    margin: 10px 20px;
+    background-color: rgb(37, 37, 37);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.name {
+    margin: 10px auto;
     font-weight: bolder;
     font-family: 'Arial', sans-serif;
     font-size: 40px;
     color: white;
-
+    letter-spacing: 10px;
     background-size: 200% 100%;
-    transition: background-position 1s ease-in;
-    
+    transition: all 0.5s ease-in-out;
 }
 
-.logo:hover {
+.name:hover {
     transform: none;
+    letter-spacing: 20px;
 }
 
 a {
