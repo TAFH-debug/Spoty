@@ -49,6 +49,11 @@ If you succesfully launched site - it is avaible on port 5147.
 Cite url: http://127.0.0.1:5173
 
 There is some example albums that I added by myself.
+You can register and then go to the song page and add your review.
+In review you can add it's content and score.
+![alt text](images/image.png)
+If you didn't registered your review wouldn't be sent.
+ 
 Some of the things that I didn't have time to do:
 
 - Error handling 
