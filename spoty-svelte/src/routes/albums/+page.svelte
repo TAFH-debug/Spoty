@@ -44,7 +44,11 @@
       <div class="title">{data.album.title}</div>
       <div class="author">{data.album.author}</div>
     </div>
+    <div style="width: 50%;">
+      <div class="description_content">{data.album.description}</div>
+    </div>
 </div>
+
 
 <div class="send_title">Send your review on this song!</div>
 <div class="send">
@@ -68,6 +72,20 @@
 
 
 <style>
+  .description_title {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+  }
+
+  .description_content {
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+  }
+
   .reviews_title {
     text-align: center;
     background-color: black;
