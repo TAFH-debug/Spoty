@@ -1,6 +1,8 @@
 <nav class="header">
     <img class="logo" src="src/lib/images/logo.svg" alt=""/>
     <a class="name" href="/">Spoty</a>
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
     <input class="search"/>
 </nav>
 
@@ -10,7 +12,7 @@
     background: rgb(16, 16, 16);
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -37,7 +39,6 @@
 }
 
 .name {
-    margin: 10px auto;
     font-weight: bolder;
     font-family: 'Arial', sans-serif;
     font-size: 40px;

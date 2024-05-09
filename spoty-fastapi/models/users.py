@@ -9,5 +9,5 @@ users_table = sqlalchemy.Table(
     metadata,
     sqlalchemy.Column("id", sqlalchemy.Integer, primary_key=True),
     sqlalchemy.Column("name", sqlalchemy.String(100)),
-    sqlalchemy.Column("hashed_password", sqlalchemy.String())
+    sqlalchemy.Column("password", sqlalchemy.String())
 )

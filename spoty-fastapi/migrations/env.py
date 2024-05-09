@@ -2,7 +2,7 @@ from logging.config import fileConfig
 
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
-from models import users, messages
+from models import users, reviews, albums
 from alembic import context
 
 config = context.config
@@ -10,7 +10,7 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-target_metadata = [users.metadata, messages.metadata]
+target_metadata = [users.metadata, reviews.metadata, albums.metadata]
 
 
 def run_migrations_offline() -> None:

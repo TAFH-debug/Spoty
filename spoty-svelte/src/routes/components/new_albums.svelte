@@ -4,7 +4,7 @@
 
 <div class="albums_container">
 	{#each data.albums as album}
-    <div class="album">
+    <div class="album" on:click={window.location.href = "/albums?id=" + album.id}>
       <img src={album.image} alt="">
       <div>
         <div class="title">{album.title}</div>

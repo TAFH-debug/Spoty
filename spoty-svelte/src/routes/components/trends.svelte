@@ -8,7 +8,7 @@
     Current trends and new albums
   </div>
 	{#each data.trends as trend}
-    <div class="trend">
+    <div class="trend" on:click={window.location.href = "/albums?id=" + trend.id}>
       <img src={trend.image} alt="">
       <div class="title">{trend.title}</div>
       <div class="author">{trend.author}</div>

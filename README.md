@@ -5,7 +5,10 @@ This is a simple web application for viewing, discussing and evaluating new tren
 ## Development tracker
 
 - [x] Basic web layout
-- [ ] User authorization
-- [ ] Disscussion feature
-- [ ] Spotify API
+- [x] User authorization
+- [x] Disscussion feature
+- [ ] Searching albums
 - [ ] Docker container
+
+## Usage guide
+
