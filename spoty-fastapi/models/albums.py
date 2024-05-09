@@ -12,5 +12,5 @@ albums_table = sqlalchemy.Table(
     sqlalchemy.Column("author", sqlalchemy.String(100)),
     sqlalchemy.Column("genre", sqlalchemy.String(100)),
     sqlalchemy.Column("description", sqlalchemy.Text()),
-    sqlalchemy.Column("image", sqlalchemy.String(100)),
+    sqlalchemy.Column("image", sqlalchemy.Text()),
 )

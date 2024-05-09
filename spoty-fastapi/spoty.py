@@ -10,7 +10,6 @@ import databases
 from pydantic_models import *
 import json 
 
-
 DB_USER = environ.get("DB_USER", "postgres")
 DB_PASSWORD = environ.get("DB_PASSWORD", "postgres")
 DB_HOST = environ.get("DB_HOST", "localhost")
@@ -82,7 +81,7 @@ async def startup():
         )
         
     for i in obj['albums']:
-        query2 = query2.values(
+        query3 = query2.values(
             id=i['id'],
             title=i['title'],
             author=i['author'],
@@ -90,7 +89,7 @@ async def startup():
             description=i['description'],
             image=i['image']
         )
-    await database.execute(query2)
+        await database.execute(query3)
     
     with open("./example_data.json", "w+") as file:
         obj['loaded'] = True
