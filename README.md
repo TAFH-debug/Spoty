@@ -4,7 +4,7 @@ This is a simple web application for viewing, discussing and evaluating new tren
 
 ## Development tracker
 
-- [ ] Basic web layout
+- [x] Basic web layout
 - [ ] User authorization
 - [ ] Disscussion feature
 - [ ] Spotify API

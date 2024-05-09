@@ -12,6 +12,12 @@
     </div>
 </div>
 
+{#each data.messages as message}
+  <div>
+    {@html message.title}
+  </div>
+{/each}
+
 <style>
   .container {
     background-color: black;
